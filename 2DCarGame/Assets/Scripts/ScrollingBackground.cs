@@ -8,7 +8,7 @@ public class ScrollingBackground : MonoBehaviour
 
     Material TheBackgroundMaterial;
 
-    Vector2 offSet;
+    Vector2 offSet; //The movement offset
 
     void Start()
     {
@@ -16,8 +16,9 @@ public class ScrollingBackground : MonoBehaviour
 
         offSet = new Vector2(0f, scrollingBackgroundspeed);
     }
+        
     void Update()
-    {
-        TheBackgroundMaterial.mainTextureOffset += offSet * Time.deltaTime;
+        {
+            TheBackgroundMaterial.mainTextureOffset += offSet * Time.deltaTime;
+        }
     }
-}

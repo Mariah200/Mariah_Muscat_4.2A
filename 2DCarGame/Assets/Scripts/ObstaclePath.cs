@@ -6,7 +6,7 @@ public class ObstaclePath : MonoBehaviour
 {
     [SerializeField] List<Transform> Thewavepoint;
 
-    [SerializeField] ThewaveConfig obstaclewave;
+    [SerializeField] ObstacleWaveConfig obstaclewave;
 
     int obstaclewaveElement = 0;
 
@@ -45,7 +45,7 @@ public class ObstaclePath : MonoBehaviour
         }
     }
 
-    public void ToSetTheConfig(ThewaveConfig obstaclewaveSet)
+    public void ToSetTheConfig(ObstacleWaveConfig obstaclewaveSet)
     {
         obstaclewave = obstaclewaveSet;
     }

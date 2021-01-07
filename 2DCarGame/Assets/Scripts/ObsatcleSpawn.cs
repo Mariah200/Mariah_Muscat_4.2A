@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObsatcleSpawn : MonoBehaviour
 {
     //to spawn obsatcles (to shoot)
-    [SerializeField] List<ThewaveConfig> ThewaveConfigList;
+    [SerializeField] List<ObstacleWaveConfig> ThewaveConfigList;
     [SerializeField] bool loop = false;
 
     int TowaveStart = 0;
@@ -18,7 +18,7 @@ public class ObsatcleSpawn : MonoBehaviour
         }
         while (loop == true);
     }
-    private IEnumerator ToShotAllTheWaves(ThewaveConfig waveConfig)
+    private IEnumerator ToShotAllTheWaves(ObstacleWaveConfig waveConfig)
     {
         for (int TheobstacleCount = 1; TheobstacleCount <= waveConfig.GettingNum(); TheobstacleCount++)
         {
@@ -31,7 +31,7 @@ public class ObsatcleSpawn : MonoBehaviour
 
     private IEnumerator ToShotTheWaves()
     {
-        foreach (ThewaveConfig currentWave in ThewaveConfigList)
+        foreach (ObstacleWaveConfig currentWave in ThewaveConfigList)
         {
             yield return StartCoroutine(ToShotAllTheWaves(currentWave));
 
