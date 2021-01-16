@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6972752677107405655}
   - component: {fileID: 5430800773388498254}
   - component: {fileID: -4117664877369662422}
+  - component: {fileID: 9050783743490175853}
   m_Layer: 0
   m_Name: ObstacleBin
   m_TagString: Untagged
@@ -117,6 +118,7 @@ MonoBehaviour:
   mixTimeofShots: 4
   TheFireObstacle: {fileID: 5032425019774916974, guid: cbb25d5c2b9c6664e8ca144bb55c6a59, type: 3}
   TheFireSpeedBullet: 0.3
+  health: 100
 --- !u!114 &5430800773388498254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +133,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagedBullets: 1
 --- !u!60 &-4117664877369662422
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4821758938686423362}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.02, y: -2.07}
+      - {x: 1.04, y: -2.02}
+      - {x: 1.05, y: -1.9399999}
+      - {x: 1.05, y: 1.0699999}
+      - {x: 1.04, y: 1.3299999}
+      - {x: 1.05, y: 1.3399999}
+      - {x: 1.05, y: 1.39}
+      - {x: 1.01, y: 1.49}
+      - {x: 0.89, y: 1.5999999}
+      - {x: 0.87, y: 1.68}
+      - {x: 0.95, y: 1.79}
+      - {x: 0.96, y: 1.86}
+      - {x: 0.96, y: 1.99}
+      - {x: 0.90999997, y: 2.1499999}
+      - {x: 0.79999995, y: 2.29}
+      - {x: 0.71, y: 2.34}
+      - {x: 0.55, y: 2.3799999}
+      - {x: 0.16, y: 2.3799999}
+      - {x: -0.03, y: 2.37}
+      - {x: -0.14, y: 2.35}
+      - {x: -0.53999996, y: 2.2}
+      - {x: -0.59, y: 2.1599998}
+      - {x: -0.82, y: 1.9599999}
+      - {x: -0.96, y: 1.8199999}
+      - {x: -1.03, y: 1.67}
+      - {x: -1.04, y: 1.65}
+      - {x: -1.04, y: 1.4699999}
+      - {x: -0.98999995, y: 1.3299999}
+      - {x: -0.98999995, y: -2.03}
+      - {x: -0.87, y: -2.18}
+      - {x: -0.71, y: -2.27}
+      - {x: -0.59, y: -2.31}
+      - {x: -0.34, y: -2.37}
+      - {x: -0.17999999, y: -2.3799999}
+      - {x: 0.25, y: -2.3799999}
+      - {x: 0.41, y: -2.36}
+      - {x: 0.69, y: -2.3}
+      - {x: 0.93, y: -2.18}
+--- !u!60 &9050783743490175853
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
