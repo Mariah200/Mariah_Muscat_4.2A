@@ -119,6 +119,10 @@ MonoBehaviour:
   TheFireObstacle: {fileID: 5032425019774916974, guid: cbb25d5c2b9c6664e8ca144bb55c6a59, type: 3}
   TheFireSpeedBullet: 0.3
   health: 100
+  enemyDeathSound: {fileID: 8300000, guid: 48d42367a58a2ba45bec9d6f065c904e, type: 3}
+  enemyDeathSoundVolume: 0.75
+  shootSound: {fileID: 0}
+  shootSoundVolume: 0.25
 --- !u!114 &5430800773388498254
 MonoBehaviour:
   m_ObjectHideFlags: 0

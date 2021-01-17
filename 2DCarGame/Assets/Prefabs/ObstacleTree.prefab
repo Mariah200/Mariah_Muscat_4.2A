@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5023415418122406301}
   - component: {fileID: -3597068164232820721}
   - component: {fileID: 4669427702567345427}
+  - component: {fileID: 4379358105846896293}
   m_Layer: 0
   m_Name: ObstacleTree
   m_TagString: Untagged
@@ -247,3 +248,25 @@ PolygonCollider2D:
       - {x: 0.22, y: -1.06}
       - {x: 0.24, y: -0.98999995}
       - {x: 0.14999999, y: -0.53999996}
+--- !u!114 &4379358105846896293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812090214844453756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c33be639b3eb4b4eaf4d15e1f309a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheShot: 0
+  minTimeofShots: 0.3
+  mixTimeofShots: 4
+  TheFireObstacle: {fileID: 0}
+  TheFireSpeedBullet: 0.3
+  health: 100
+  enemyDeathSound: {fileID: 8300000, guid: 48d42367a58a2ba45bec9d6f065c904e, type: 3}
+  enemyDeathSoundVolume: 0.75
+  shootSound: {fileID: 0}
+  shootSoundVolume: 0.25
