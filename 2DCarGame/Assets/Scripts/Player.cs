@@ -95,13 +95,14 @@ public class Player : MonoBehaviour
 
         if( playerHealth <=0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
     private void Die()
     {
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
+        FindObjectOfType<level>().LoadGameOver(); //When the player dies it searches for the level script and calling the loadGameOver 
     }
 
 }
