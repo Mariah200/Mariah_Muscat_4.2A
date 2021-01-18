@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] float padding = 0.7f;
 
-    [SerializeField] float playerHealth = 100;
+    [SerializeField] float Health = 100;
 
     [SerializeField] AudioClip playerDeathSound;
     [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
@@ -91,9 +91,9 @@ public class Player : MonoBehaviour
 
     private void ProcessHit(DamagedDealer damagedDealer)
     {
-       playerHealth -= damagedDealer.TheDamagedBullets();
+       Health -= damagedDealer.TheDamagedBullets();
 
-        if( playerHealth <=0)
+        if( Health <=0)
         {
             Die();
         }

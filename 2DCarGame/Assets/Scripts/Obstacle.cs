@@ -16,13 +16,16 @@ public class Obstacle : MonoBehaviour
 
     [SerializeField] float health = 100;
 
-    [SerializeField] AudioClip enemyDeathSound;
+    [SerializeField] AudioClip ObstacleDeathSound;
 
-    [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
+    [SerializeField] [Range(0, 1)] float ObstacleSoundVolume = 0.75f;
 
     [SerializeField] AudioClip shootSound;
 
     [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.25f;
+
+    [SerializeField] int scoreValue = 100;
+
 
 
 
@@ -36,8 +39,12 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        AudioSource.PlayClipAtPoint(ObstacleDeathSound, Camera.main.transform.position, shootSoundVolume);
+
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
 
     }
+
 
     private static int ProcessHit(DamagedDealer damagedDealer)
     {

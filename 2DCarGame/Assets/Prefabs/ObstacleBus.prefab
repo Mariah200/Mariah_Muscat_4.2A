@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -9040398957510888821}
   - component: {fileID: -5990424589192082038}
   - component: {fileID: -1470796380795358251}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ObstacleBus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,10 +346,11 @@ MonoBehaviour:
   TheFireObstacle: {fileID: 5402476757553580530, guid: f46d0821176b8d14a89d66ca75ca0175, type: 3}
   TheFireSpeedBullet: 0.3
   health: 100
-  enemyDeathSound: {fileID: 8300000, guid: 48d42367a58a2ba45bec9d6f065c904e, type: 3}
-  enemyDeathSoundVolume: 0.75
+  ObstacleDeathSound: {fileID: 0}
+  ObstacleSoundVolume: 0.75
   shootSound: {fileID: 0}
   shootSoundVolume: 0.25
+  scoreValue: 100
 --- !u!50 &-1470796380795358251
 Rigidbody2D:
   serializedVersion: 4

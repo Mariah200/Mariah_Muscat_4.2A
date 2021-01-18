@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3597068164232820721}
   - component: {fileID: 4379358105846896293}
   - component: {fileID: -9046488579016472846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ObstacleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,10 +199,11 @@ MonoBehaviour:
   TheFireObstacle: {fileID: 0}
   TheFireSpeedBullet: 0.3
   health: 100
-  enemyDeathSound: {fileID: 8300000, guid: 48d42367a58a2ba45bec9d6f065c904e, type: 3}
-  enemyDeathSoundVolume: 0.75
+  ObstacleDeathSound: {fileID: 0}
+  ObstacleSoundVolume: 0.75
   shootSound: {fileID: 0}
   shootSoundVolume: 0.25
+  scoreValue: 100
 --- !u!50 &-9046488579016472846
 Rigidbody2D:
   serializedVersion: 4

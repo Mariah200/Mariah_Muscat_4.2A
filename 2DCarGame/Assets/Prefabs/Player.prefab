@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6906583573749225576}
   - component: {fileID: 6906583573749225577}
   - component: {fileID: 6887085737748979875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,6 +100,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   padding: 0.7
+  Health: 100
+  playerDeathSound: {fileID: 0}
+  playerDeathSoundVolume: 0.75
+  shootSound: {fileID: 0}
+  shootSoundVolume: 0.1
 --- !u!114 &6906583573749225576
 MonoBehaviour:
   m_ObjectHideFlags: 0
