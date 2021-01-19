@@ -19,8 +19,6 @@ public class Player : MonoBehaviour
     [SerializeField] AudioClip playerDeathSound;
     [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
 
-    [SerializeField] AudioClip shootSound;
-    [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.1f;
 
 
     float xMin, xMax, yMin, yMax;
@@ -101,7 +99,9 @@ public class Player : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
+        
         FindObjectOfType<level>().LoadGameOver(); //When the player dies it searches for the level script and calling the loadGameOver 
     }
 

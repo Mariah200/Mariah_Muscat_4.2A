@@ -101,10 +101,8 @@ MonoBehaviour:
   moveSpeed: 2
   padding: 0.7
   Health: 100
-  playerDeathSound: {fileID: 0}
-  playerDeathSoundVolume: 0.75
-  shootSound: {fileID: 0}
-  shootSoundVolume: 0.1
+  playerDeathSound: {fileID: 8300000, guid: c0ea0e111a3d6494d97a96e02155ab7e, type: 3}
+  playerDeathSoundVolume: 1
 --- !u!114 &6906583573749225576
 MonoBehaviour:
   m_ObjectHideFlags: 0

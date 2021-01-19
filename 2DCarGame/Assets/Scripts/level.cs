@@ -5,13 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class level : MonoBehaviour
 {
-    [SerializeField] float delayInSec = 2f;
+    [SerializeField] float delayInSec = 1f;
 
-    IEnumerator WandL() //these are co routines (Wait and load)
-    {
-        yield return new WaitForSeconds(delayInSec);
-        SceneManager.LoadScene("GameOver");
-    }
     public void LoadStartMenu()
     {
 
@@ -22,11 +17,14 @@ public class level : MonoBehaviour
     {
 
         SceneManager.LoadScene("2DCarScene"); //loads the 2DCar Scene of the game 
+
+        FindObjectOfType<GameSession>().ResetGame(); //To reset the game 
     }
 
     public void LoadGameOver()
     {
-        StartCoroutine(WandL());
+        SceneManager.LoadScene("GameOver");
+       
     }
 
     public void QuitGame()

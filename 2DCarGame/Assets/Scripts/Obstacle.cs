@@ -20,10 +20,6 @@ public class Obstacle : MonoBehaviour
 
     [SerializeField] [Range(0, 1)] float ObstacleSoundVolume = 0.75f;
 
-    [SerializeField] AudioClip shootSound;
-
-    [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.25f;
-
     [SerializeField] int scoreValue = 100;
 
 
@@ -39,7 +35,7 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        AudioSource.PlayClipAtPoint(ObstacleDeathSound, Camera.main.transform.position, shootSoundVolume);
+        AudioSource.PlayClipAtPoint(ObstacleDeathSound, Camera.main.transform.position, ObstacleSoundVolume);
 
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
 
@@ -76,7 +72,7 @@ public class Obstacle : MonoBehaviour
 
         TheLaserBullets.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -TheFireSpeedBullet);
 
-        AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position, shootSoundVolume);
+        AudioSource.PlayClipAtPoint(ObstacleDeathSound, Camera.main.transform.position, ObstacleSoundVolume);
 
     }
 
