@@ -200,9 +200,7 @@ MonoBehaviour:
   TheFireSpeedBullet: 0.3
   health: 100
   ObstacleDeathSound: {fileID: 8300000, guid: 48d42367a58a2ba45bec9d6f065c904e, type: 3}
-  ObstacleSoundVolume: 0
-  shootSound: {fileID: 0}
-  shootSoundVolume: 0.25
+  ObstacleSoundVolume: 0.15
   scoreValue: 100
 --- !u!50 &-9046488579016472846
 Rigidbody2D:

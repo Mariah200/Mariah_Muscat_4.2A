@@ -120,7 +120,7 @@ MonoBehaviour:
   TheFireSpeedBullet: 1
   health: 100
   ObstacleDeathSound: {fileID: 8300000, guid: 48d42367a58a2ba45bec9d6f065c904e, type: 3}
-  ObstacleSoundVolume: 0
+  ObstacleSoundVolume: 0.15
   scoreValue: 100
 --- !u!114 &5430800773388498254
 MonoBehaviour:
